@@ -1,0 +1,51 @@
+### Movie Index
+GET http://localhost:3000/movies.json
+### Movie Show
+GET http://localhost:3000/movie/2.json
+### Movie Create
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "Karate Kid",
+  "year": "1984",
+  "plot": "A young man named Daniel learns karate to face off a vicious bully"
+}
+
+### Movie Update
+PATCH http://localhost:3000/movie/2.json
+Content-Type: application/json
+
+{
+  "plot": "A young man named Clark Kent discovers his alien heritage and decides to use his mighty powers for the good of all"
+}
+
+### Movie Destroy 
+DELETE http://localhost:3000/movie/3.json
+
+### Actors Index
+GET http://localhost:3000/actors.json
+
+### Actor Destroy
+DELETE http://localhost:3000/actor/5.json
+
+### Actor Create
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "Mark",
+  "last_name": "Hamill",
+  "known_for": "Star Wars"
+}
+
+### Actor Update
+PATCH http://localhost:3000/actor/6.json
+Content-Type: application/json
+
+{
+  "first_name": "Christopher"
+}
+
+### Actor Show 
+GET http://localhost:3000/actor/8.json
