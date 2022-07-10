@@ -7,9 +7,11 @@ POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title": "Karate Kid",
-  "year": "1984",
-  "plot": "A young man named Daniel learns karate to face off a vicious bully"
+  "title": "Empire Strikes Back",
+  "year": "1980",
+  "plot": "The empire strikes back against the rebels in this sci-fi epic",
+  "director": "Ivan Kershner",
+  "english": "true"
 }
 
 ### Movie Update
@@ -17,7 +19,9 @@ PATCH http://localhost:3000/movie/2.json
 Content-Type: application/json
 
 {
-  "plot": "A young man named Clark Kent discovers his alien heritage and decides to use his mighty powers for the good of all"
+  "plot": "A young man named Clark Kent discovers his alien heritage and decides to use his mighty powers for the good of all",
+  "director": "Richard Donner",
+  "english": "true"
 }
 
 ### Movie Destroy 
@@ -36,7 +40,10 @@ Content-Type: application/json
 {
   "first_name": "Mark",
   "last_name": "Hamill",
-  "known_for": "Star Wars"
+  "known_for": "Star Wars",
+  "age": 70,
+  "gender": "male"
+
 }
 
 ### Actor Update
@@ -44,7 +51,9 @@ PATCH http://localhost:3000/actor/6.json
 Content-Type: application/json
 
 {
-  "first_name": "Christopher"
+  "first_name": "Christopher",
+  "age": 52,
+  "gender": "male"
 }
 
 ### Actor Show 
