@@ -55,4 +55,4 @@ Content-Type: application/json
 }
 
 ### Actor Show 
-GET http://localhost:3000/actor/8.json
+GET http://localhost:3000/actor/6.json
